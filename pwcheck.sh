@@ -11,7 +11,7 @@ if [ $# -lt 1 ]; then
 fi
 if [ ${#PASSWORD} -lt 6 ]; then
   echo "Error: Password length invalid"
-else if [ ${#PASSWORD} -gt 32 ]; then
+elif [ ${#PASSWORD} -gt 32 ]; then
   echo "Error: Password length invalid."
 else 
   let SCORE=32-{#PASSWORD}
