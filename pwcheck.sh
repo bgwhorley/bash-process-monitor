@@ -12,8 +12,9 @@ if [ ${#PASSWORD} -lt 6 ]; then
   echo "Error: Password length invalid"
 elif [ ${#PASSWORD} -gt 32 ]; then
   echo "Error: Password length invalid."
-else 
-  $SCORE=32-{#1}
+else
+  PWLEN=${#1}
+  $SCORE=32-PWLEN
 fi
 
 echo $SCORE
