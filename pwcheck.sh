@@ -5,15 +5,16 @@ git commit -a -m "Lab 2 commit" >> .local.git.out
 
 #Your code here
 SCORE=0
+PASSWORD=$1
 if [ $# -lt 1 ]; then
   echo "Error: Please enter a password"
 fi
-if [ ${#1} -lt 6 ]; then
+if [ ${#PASSWORD} -lt 6 ]; then
   echo "Error: Password length invalid"
-else if [ ${#1} -gt 32 ]; then
+else if [ ${#PASSWORD} -gt 32 ]; then
   echo "Error: Password length invalid."
 else 
-  $SCORE=32-${#1}
+  $SCORE=32-${#PASSWORD}
 fi
 
 echo $SCORE
