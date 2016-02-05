@@ -4,7 +4,6 @@ git add $0 >> .local.git.out
 git commit -a -m "Lab 2 commit" >> .local.git.out
 
 #Your code here
-SCORE=0
 PASSWORD=$1
 if [ $# -lt 1 ]; then
   echo "Error: Please enter a password"
@@ -14,7 +13,7 @@ if [ ${#PASSWORD} -lt 6 ]; then
 elif [ ${#PASSWORD} -gt 32 ]; then
   echo "Error: Password length invalid."
 else 
-  let SCORE=SCORE+32-{#PASSWORD}
+  $SCORE=32-{#1}
 fi
 
 echo $SCORE
