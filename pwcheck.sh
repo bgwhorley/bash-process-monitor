@@ -16,7 +16,7 @@ else
 	SCORE=0
 	
 	PWLEN=${#1}
-	let SCORE=32-$PWLEN
+	let SCORE=$PWLEN-5
 
 	echo $1 > password.txt
 	PW=$(egrep [0-9][0-9][0-9] password.txt)
