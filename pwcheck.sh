@@ -25,6 +25,18 @@ else
 		let SCORE=$SCORE-3
 		echo $SCORE
 	fi
+	PW=$(egrep [a-z][a-z][a-z] password.txt)
+	if [ ${#PW} -gt 0 ]; then
+		echo "found 3 lowercase letters"
+		let SCORE=$SCORE-3
+		echo $SCORE
+	fi
+	PW=$(egrep [A-Z][A-Z][A-Z] password.txt)
+	if [ ${#PW} -gt 0 ]; then
+		echo "found 3 upppercase letters"
+		let SCORE=$SCORE-3
+		echo $SCORE
+	fi
 	PW=$(egrep [0-9] password.txt)
 	if [ ${#PW} -gt 0  ]; then
 		echo "has at least one number"
@@ -45,4 +57,5 @@ else
 		echo "has a special character"
 		let SCORE=$SCORE+5
 	fi
+
 fi
