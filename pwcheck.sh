@@ -7,9 +7,9 @@ echo $#
 #Your code here
 if [ $# -lt 1 ]; then
 	echo "Error: Please enter a password"
-elif [ ${#PASSWORD} -lt 6 ]; then
+elif [ ${#1} -lt 6 ]; then
 	echo "Error: Password length invalid"
-elif [ ${#PASSWORD} -gt 32 ]; then
+elif [ ${#1} -gt 32 ]; then
 	echo "Error: Password length invalid."
 else
 	PASSWORD=$1
@@ -20,7 +20,7 @@ else
 
 	#$1 > password.txt
 	egrep [0-9][0-9][0-9] $1 > $PW
-	if [ {$#PW}  ]; then
+	if [ ${#PW}  ]; then
 		echo "something"
 	fi
 fi
