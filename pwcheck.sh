@@ -7,16 +7,20 @@ git commit -a -m "Lab 2 commit" >> .local.git.out
 PASSWORD=$1
 SCORE=0
 if [ $# -lt 1 ]; then
-  echo "Error: Please enter a password"
-fi
-if [ ${#PASSWORD} -lt 6 ]; then
-  echo "Error: Password length invalid"
+	echo "Error: Please enter a password"
+elif [ ${#PASSWORD} -lt 6 ]; then
+	echo "Error: Password length invalid"
 elif [ ${#PASSWORD} -gt 32 ]; then
-  echo "Error: Password length invalid."
+	echo "Error: Password length invalid."
 else
-  PWLEN=${#1}
-  let SCORE=32-$PWLEN
-fi
+	PWLEN=${#1}
+	let SCORE=32-$PWLEN
 
+	$1 > password.txt
+	egrep [0-9][0-9][0-9] password.txt
+	if [   ]; then
+
+	fi
+fi
 echo $SCORE
 
