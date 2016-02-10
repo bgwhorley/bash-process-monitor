@@ -58,7 +58,10 @@ else
 		let SCORE=$SCORE+5
 	fi
 	PW=$(egrep "([0-9])\1+" password.txt)
-	if [ ${#PW} -gt 0 ]; then
+	PWA=$(egrep "([a-z])\1+" password.txt)
+	PWB=$(egrep "([A-Z])\1+" password.txt)
+
+	if [ ${#PW} -gt 0 ] || [ ${#PWA} -gt 0 ] || [ ${#PWB} -gt 0 ]; then
 		echo "repeated identical characters"
 		let SCORE=$SCORE-10
 	fi
