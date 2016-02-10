@@ -22,7 +22,7 @@ else
 	PW=$(egrep [0-9][0-9][0-9] password.txt)
 	if [ ${#PW} -gt 0 ]; then
 		echo "found 3 consecutive numbers"
-		$SCORE=$SCORE-5
+		let SCORE=$SCORE-5
 		echo $SCORE
 	fi
 fi
