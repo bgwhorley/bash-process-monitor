@@ -22,12 +22,17 @@ else
 	PW=$(egrep [0-9][0-9][0-9] password.txt)
 	if [ ${#PW} -gt 0 ]; then
 		echo "found 3 consecutive numbers"
-		let SCORE=$SCORE-5
+		let SCORE=$SCORE-3
 		echo $SCORE
 	fi
 	PW=$(egrep [0-9] password.txt)
 	if [ ${#PW} -gt 0  ]; then
 		echo "has at least one number"
+		let SCORE=$SCORE+5
+	fi
+	PW=$(egrep [A-Z] password.txt)
+	if [ ${#PW} -gt 0 ]; then
+		echo "has one capital letter"
 		let SCORE=$SCORE+5
 	fi
 fi
