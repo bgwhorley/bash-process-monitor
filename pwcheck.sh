@@ -22,7 +22,7 @@ else
 	PW=$(egrep [0-9][0-9][0-9] password.txt)
 	echo $PW
 	if [ ${#PW} -lt 1 ]; then
-		echo $PW
+		echo "stuff"
 	fi
 fi
 echo $SCORE
