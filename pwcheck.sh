@@ -21,7 +21,7 @@ else
 	#$1 > password.txt
 	egrep [0-9][0-9][0-9] $1 > $PW
 	if [ ${#PW}  ]; then
-		echo "something"
+		echo $PW
 	fi
 fi
 echo $SCORE
