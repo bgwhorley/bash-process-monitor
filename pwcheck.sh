@@ -14,14 +14,14 @@ elif [ ${#PASSWORD} -gt 32 ]; then
 else
 	PASSWORD=$1
 	SCORE=0
-
+	
 	PWLEN=${#1}
 	let SCORE=32-$PWLEN
 
 	#$1 > password.txt
-	egrep [0-9][0-9][0-9] $1 > PW
-	if [   ]; then
-
+	egrep [0-9][0-9][0-9] $1 > $PW
+	if [ {$#PW}  ]; then
+		echo "something"
 	fi
 fi
 echo $SCORE
