@@ -18,8 +18,8 @@ else
 	PWLEN=${#1}
 	let SCORE=32-$PWLEN
 
-	$1 > password.txt
-	egrep [0-9][0-9][0-9] password.txt
+	#$1 > password.txt
+	egrep [0-9][0-9][0-9] $1 > PW
 	if [   ]; then
 
 	fi
