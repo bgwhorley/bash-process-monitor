@@ -20,9 +20,10 @@ else
 
 	echo $1 > password.txt
 	PW=$(egrep [0-9][0-9][0-9] password.txt)
-	echo $PW
 	if [ ${#PW} -gt 0 ]; then
-		echo "stuff"
+		echo "found 3 consecutive numbers"
+		$SCORE=$SCORE-5
+		echo $SCORE
 	fi
 fi
 
