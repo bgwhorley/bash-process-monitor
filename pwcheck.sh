@@ -19,7 +19,7 @@ else
 	let SCORE=32-$PWLEN
 
 	$1 > password.txt
-	egrep [0-9][0-9][0-9] password.txt)
+	egrep [0-9][0-9][0-9] password.txt
 	#if [ ${#PW} -lt 1 ]; then
 	#	echo $PW
 	#fi
