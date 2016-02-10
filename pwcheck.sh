@@ -20,50 +20,47 @@ else
 
 	echo $1 > password.txt
 	PW=$(egrep [0-9][0-9][0-9] password.txt)
+	#found 3 consecutive numbers"
 	if [ ${#PW} -gt 0 ]; then
-		echo "found 3 consecutive numbers"
 		let SCORE=$SCORE-3
-		echo $SCORE
 	fi
 	PW=$(egrep [a-z][a-z][a-z] password.txt)
+	#found 3 consecutive lowercase letters
 	if [ ${#PW} -gt 0 ]; then
-		echo "found 3 lowercase letters"
 		let SCORE=$SCORE-3
-		echo $SCORE
 	fi
 	PW=$(egrep [A-Z][A-Z][A-Z] password.txt)
+	#found 3 consecutive uppercase letters
 	if [ ${#PW} -gt 0 ]; then
-		echo "found 3 upppercase letters"
 		let SCORE=$SCORE-3
-		echo $SCORE
 	fi
 	PW=$(egrep [0-9] password.txt)
+	#has at least one number
 	if [ ${#PW} -gt 0  ]; then
-		echo "has at least one number"
 		let SCORE=$SCORE+5
 	fi
+	#has at least one capital letter
 	PW=$(egrep [A-Z] password.txt)
 	if [ ${#PW} -gt 0 ]; then
-		echo "has one capital letter"
 		let SCORE=$SCORE+5
 	fi
+	#has at least one alphabetical character
 	PW=$(egrep [A-Za-z] password.txt)
 	if [ ${#PW} -gt 0 ]; then
-		echo "has one alphabetical character"
 		let SCORE=$SCORE+5
 	fi
+	#has at least one special character
 	PW=$(egrep [#$\+%@] password.txt)
 	if [ ${#PW} -gt 0 ]; then
-		echo "has a special character"
 		let SCORE=$SCORE+5
 	fi
+	#has consecutive identical characters
 	PW=$(egrep "([0-9])\1+" password.txt)
 	PWA=$(egrep "([a-z])\1+" password.txt)
 	PWB=$(egrep "([A-Z])\1+" password.txt)
 
 	if [ ${#PW} -gt 0 ] || [ ${#PWA} -gt 0 ] || [ ${#PWB} -gt 0 ]; then
-		echo "repeated identical characters"
 		let SCORE=$SCORE-10
 	fi
-	echo $SCORE
+	echo "Password score: $SCORE"
 fi
