@@ -57,5 +57,10 @@ else
 		echo "has a special character"
 		let SCORE=$SCORE+5
 	fi
+	PW=$(egrep ([a-z]}\1+ password.txt)
+	if [ ${#PW} -gt 0 ]; then
+		echo "repeated identical characters"
+		let SCORE=$SCORE-10
+	fi
 
 fi
