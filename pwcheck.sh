@@ -35,5 +35,14 @@ else
 		echo "has one capital letter"
 		let SCORE=$SCORE+5
 	fi
+	PW=$(egrep [A-Za-z] password.txt)
+	if [ ${#PW} -gt 0 ]; then
+		echo "has one alphabetical character"
+		let SCORE=$SCORE+5
+	fi
+	PW=$(egrep [#$\+%@] password.txt)
+	if [ ${#PW} -gt 0 ]; then
+		echo "has a special character"
+		let SCORE=$SCORE+5
+	fi
 fi
-
