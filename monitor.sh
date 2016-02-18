@@ -25,7 +25,7 @@ function check_arguments {
 		echo "USAGE: "
 		echo "$0 {process id} -cpu {utilization percentage} -mem {maximum memory in kb} {maximum reports} {time interval}"
 		exit
-	else
+	fi
 
 	CPU_THRESHOLD=$(awk < $2 '{ print $3 }')
 	if [ $1 == 7  ]; then 
