@@ -28,7 +28,9 @@ function check_arguments {
 	else
 
 	CPU_THRESHOLD=$(awk < $2 '{ print $3 }')
-	MEM_THRESHOLD=$(awk < $2 '{ print $5 }')
+	if [ $1 == 7  ]; then 
+		MEM_THRESHOLD=$(awk < $2 '{ print $5 }')
+	fi
 }
 
 function init
