@@ -19,17 +19,20 @@ function check_arguments {
 		echo "$0 {process id} -cpu {utilization percentage} {maximum reports} {time interval}"
 		exit
 	fi
-
-	CPU_THRESHOLD=$4
-
 	#Extract the memory threshold (part 2 of the script)
+	
+	if [ "$1" -gt 7 ]; then		
+		echo "USAGE: "
+		echo "$0 {process id} -cpu {utilization percentage} -mem {maximum memory in kb} {maximum reports} {time interval}"
+		exit
+	else
 
-
+	CPU_THRESHOLD=$(awk < $2 '{ print $3 }')
+	MEM_THRESHOLD=$(awk < $2 '{ print $5 }')
 }
 
 function init
 {
-
 	#Remove reports directory
 	rm -fr ./reports_dir
 	mkdir ./reports_dir
@@ -41,16 +44,19 @@ function init
 	TIME_INTERVAL=${@:$#} #Time interval is the last argument
 
 	MAXIMUM_REPORTS=${@:$#-1:1} #Maximum reports is the argument before the last
-
 }
 
 #This function calculates the CPU usage percentage given the clock ticks in the last $TIME_INTERVAL seconds
 function jiffies_to_percentage {
 	
 	#Get the function arguments (oldstime, oldutime, newstime, newutime)
-
+	oldutime=$1
+	oldstime=$2
+	newutime=$3
+	newstime=$4
 	#Calculate the elpased ticks between newstime and oldstime (diff_stime), and newutime and oldutime (diff_stime)
-
+	diff_stime=$((newstime-oldstime))
+	diff_utime=$((newutime-oldutime))
 	#You will use the following command to calculate the CPU usage percentage. $TIME_INTERVAL is the user-provided time_interval
 	#Note how we are using the "bc" command to perform floating point division
 
@@ -63,7 +69,12 @@ function generate_report {
 
 	
 	#if ./reports_dir has more than $MAXIMUM_REPORTS reports, then, delete the oldest report to have room for the current one
-
+	filecount=$(ls -l $REPORTS_DIR | wc -l}	
+	if [ $filecount  -gt $MAXIMUM_REPORTS  ]; then
+		while [`ls -t $REPORTS_DIR | wc -l` -gt $MAXIMUM_REPORTS ]; do
+			rm `ls -t $REPORTS_DIR | head -1`
+		done
+	fi
 	#Name of the report file
 	file_name="$(date +'%d.%m.%Y.%H.%M.%S')"
 
@@ -73,10 +84,10 @@ function generate_report {
 	#You may uncomment the following lines to generate the report. Make sure the first argument to this function is the CPU usage
 	#and the second argument is the memory usage
 
-	#echo "PROCESS ID: $PID" > ./reports_dir/$file_name
-	#echo "PROCESS NAME: $process_name" >> ./reports_dir/$file_name
-	#echo "CPU USAGE: $1 %" >> ./reports_dir/$file_name
-	#echo "MEMORY USAGE: $2 kB" >> ./reports_dir/$file_name
+	echo "PROCESS ID: $PID" > ./reports_dir/$file_name
+	echo "PROCESS NAME: $process_name" >> ./reports_dir/$file_name
+	echo "CPU USAGE: $1 %" >> ./reports_dir/$file_name
+	echo "MEMORY USAGE: $2 kB" >> ./reports_dir/$file_name
 }
 
 #Returns a percentage representing the CPU usage
@@ -86,13 +97,12 @@ function calculate_cpu_usage {
 	#the CPU usage for the last interval_time seconds. For example, if interval_time is 5 seconds, then, CPU usage
 	#is measured over the last 5 seconds
 
-	#First, get the current utime and stime (oldutime and oldstime) from /proc/{pid}/stat
- 	PID=$1
+	#First, get the current utime and stime (oldutime and oldstime) from /proc/{pid}/stat 	
 	oldutime=$(awk < /proc/$PID/stat '{ print $13 }')
 	oldstime=$(awk < /proc/$PID/stat '{ print $14 }')
 
 	#Sleep for time_interval
-	sleep $4
+	sleep $TIME_INTERVAL
 	#Now, get the current utime and stime (newutime and newstime) /proc/{pid}/stat
 	newutime=$(awk < /proc/$PID/stat '{ print $13 }')
 	newutime=$(awk < /proc/$PID/stat '{ print $14 }')
@@ -102,7 +112,6 @@ function calculate_cpu_usage {
 
 	percentage=$(jiffies_to_percentage $oldutime $oldstime $newutime $newstime)
 
-
 	#Return the usage percentage
 	echo "$percentage" #return the CPU usage percentage
 }
@@ -110,7 +119,9 @@ function calculate_cpu_usage {
 function calculate_mem_usage
 {
 	#Let us extract the VmRSS value from /proc/{pid}/status
-	
+	grep VmRSS /proc/$PID/status > tmp
+	mem_usage=$(awk < tmp '{ print $2 }')
+	rm tmp
 
 	#Return the memory usage
 	echo "$mem_usage"
@@ -122,7 +133,17 @@ function notify
 	cpu_usage_int=$(printf "%.f" $1)
 
 	#Check if the process has exceeded the thresholds
-
+	if [ $1 -gt $CPU_THRESHOLD  ] || [ $2 -gt $MEM_THRESHOLD  ]; then
+		echo "PROCESS ID: $PID" > tmp-message
+		echo >> tmp-message
+		pname=$(awk < /proc/$PID/stat '{ print $2 }')
+		echo "PROCESS NAME: $pname" >> tmp-message
+		echo >> tmp-message
+		echo "CPU USAGE: $1" >> tmp-message
+		echo >> tmp-message
+		/usr/bin/mailx -s "CPU/Memory use notification" $USER < tmp-message
+		echo "Message sent."
+	fi
 	#Check if process exceeded its CPU or MEM thresholds. If that is the case, send an email to $USER containing the last report
 
 }
@@ -148,6 +169,6 @@ do
 	generate_report $cpu_usage $mem_usage
 
 	#Call the notify function to send an email to $USER if the thresholds were exceeded
-	#notify $cpu_usage $mem_usage
+	notify $cpu_usage $mem_usage
 
 done
