@@ -28,7 +28,7 @@ function check_arguments {
 	fi
 
 	CPU_THRESHOLD=$(awk < $2 '{ print $3 }')
-	if [ $1 == 7  ]; then 
+	if [ $1 -eq 7  ]; then 
 		MEM_THRESHOLD=$(awk < $2 '{ print $5 }')
 	fi
 }
@@ -134,7 +134,7 @@ function notify
 	cpu_usage_int=$(printf "%.f" $1)
 
 	#Check if the process has exceeded the thresholds
-	if [ $ARG_COUNT == 5 ]; then 
+	if [ $ARG_COUNT -eq 5 ]; then 
 		if [ $1 -gt $CPU_THRESHOLD ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
@@ -147,7 +147,7 @@ function notify
 			echo "Message sent."
 		fi
 	fi
-	if [ $ARG_COUNT == 7]; then
+	if [ $ARG_COUNT -eq 7]; then
 		if [ $1 -gt $CPU_THRESHOLD ] || [ $2 -gt $MEM_THRESHOLD ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
