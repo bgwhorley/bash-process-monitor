@@ -46,6 +46,7 @@ function init
 	TIME_INTERVAL=${@:$#} #Time interval is the last argument
 
 	MAXIMUM_REPORTS=${@:$#-1:1} #Maximum reports is the argument before the last
+
 }
 
 #This function calculates the CPU usage percentage given the clock ticks in the last $TIME_INTERVAL seconds
@@ -133,21 +134,39 @@ function notify
 	cpu_usage_int=$(printf "%.f" $1)
 
 	#Check if the process has exceeded the thresholds
-	if [ $1 -gt $CPU_THRESHOLD  ] -o [ $2 -gt $MEM_THRESHOLD  ]; then
-		echo "PROCESS ID: $PID" > tmp-message
-		echo >> tmp-message
-		pname=$(awk < /proc/$PID/stat '{ print $2 }')
-		echo "PROCESS NAME: $pname" >> tmp-message
-		echo >> tmp-message
-		echo "CPU USAGE: $1" >> tmp-message
-		echo >> tmp-message
-		/usr/bin/mailx -s "CPU/Memory use notification" $USER < tmp-message
-		echo "Message sent."
+	if [ $ARG_COUNT == 5 ]; then 
+		if [ $1 -gt $CPU_THRESHOLD ]; then
+			echo "PROCESS ID: $PID" > tmp-message
+			echo >> tmp-message
+			pname=$(awk < /proc/$PID/stat '{ print $2 }')
+			echo "PROCESS NAME: $pname" >> tmp-message
+			echo >> tmp-message
+			echo "CPU USAGE: $1" >> tmp-message
+			echo >> tmp-message
+			/usr/bin/mailx -s "CPU/Memory use notification" $USER < tmp-message
+			echo "Message sent."
+		fi
+	fi
+	if [ $ARG_COUNT == 7]; then
+		if [ $1 -gt $CPU_THRESHOLD ] || [ $2 -gt $MEM_THRESHOLD ]; then
+			echo "PROCESS ID: $PID" > tmp-message
+			echo >> tmp-message
+			pname=$(awk < /proc/$PID/stat '{ print $2 }')
+			echo "PROCESS NAME: $pname" >> tmp-message
+			echo >> tmp-message
+			echo "CPU USAGE: $1" >> tmp-message
+			echo >> tmp-message
+			echo "MEM USAGE: $2" >> tmp-message
+			echo >> tmp-message
+			/usr/bin/mailx -s "CPU/Memory use notification" $USER < tmp-message
+			echo "Message sent."
+		fi
 	fi
 	#Check if process exceeded its CPU or MEM thresholds. If that is the case, send an email to $USER containing the last report
 
 }
 
+ARG_COUNT=$#
 
 check_arguments $# $@
 
