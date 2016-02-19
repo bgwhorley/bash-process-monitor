@@ -27,6 +27,7 @@ function check_arguments {
 		exit
 	fi
 
+	echo $2
 	CPU_THRESHOLD=$(awk < $2 '{ print $3 }')
 	if [ "$1" -eq 7  ]; then 
 		MEM_THRESHOLD=$(awk < $2 '{ print $5 }')
@@ -147,7 +148,7 @@ function notify
 			echo "Message sent."
 		fi
 	fi
-	if [ "$ARG_COUNT" -eq 7]; then
+	if [ "$ARG_COUNT" -eq 7 ]; then
 		if [ "$1" -gt "$CPU_THRESHOLD" ] || [ "$2" -gt "$MEM_THRESHOLD" ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
