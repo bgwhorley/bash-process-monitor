@@ -70,11 +70,10 @@ function jiffies_to_percentage {
 function generate_report {
 
 	#if ./reports_dir has more than $MAXIMUM_REPORTS reports, then, delete the oldest report to have room for the current one
-	filecount=$(ls -l $REPORTS_DIR | wc -l)	
+	filecount=$(ls $REPORTS_DIR | wc -l)	
 	if [ $filecount  -gt $MAXIMUM_REPORTS  ]; then
-		while [`ls -t $REPORTS_DIR | wc -l` -gt $MAXIMUM_REPORTS ]; do
-			rm `ls -t $REPORTS_DIR | head -1`
-		done
+		oldest=$(ls -t $REPORTS_DIR | tail -1)
+		rm $oldest
 	fi
 	#Name of the report file
 	file_name="$(date +'%d.%m.%Y.%H.%M.%S')"
@@ -134,7 +133,8 @@ function notify
 	cpu_usage_int=$(printf "%.f" $1)
 
 	#Check if the process has exceeded the thresholds
-	if [ $1 -gt $CPU_THRESHOLD  ] || [ $2 -gt $MEM_THRESHOLD  ]; then
+	if [ $1 -gt $CPU_THRESHOLD  ] || [ $2 -gt $MEM_THRESHOLD  ]
+	then
 		echo "PROCESS ID: $PID" > tmp-message
 		echo >> tmp-message
 		pname=$(awk < /proc/$PID/stat '{ print $2 }')
