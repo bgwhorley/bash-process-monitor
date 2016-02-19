@@ -28,7 +28,7 @@ function check_arguments {
 	fi
 
 	CPU_THRESHOLD=$(awk < $2 '{ print $3 }')
-	if [ $1 -eq 7  ]; then 
+	if [ "$1" -eq 7  ]; then 
 		MEM_THRESHOLD=$(awk < $2 '{ print $5 }')
 	fi
 }
@@ -71,9 +71,9 @@ function jiffies_to_percentage {
 function generate_report {
 
 	#if ./reports_dir has more than $MAXIMUM_REPORTS reports, then, delete the oldest report to have room for the current one
-	filecount=$(ls $REPORTS_DIR | wc -l)	
-	if [ $filecount  -gt $MAXIMUM_REPORTS  ]; then
-		oldest=$(ls -t $REPORTS_DIR | tail -1)
+	filecount=$(ls "$REPORTS_DIR" | wc -l)	
+	if [ "$filecount"  -gt "$MAXIMUM_REPORTS"  ]; then
+		oldest=$(ls -t "$REPORTS_DIR" | tail -1)
 		rm $oldest
 	fi
 	#Name of the report file
@@ -134,8 +134,8 @@ function notify
 	cpu_usage_int=$(printf "%.f" $1)
 
 	#Check if the process has exceeded the thresholds
-	if [ $ARG_COUNT -eq 5 ]; then 
-		if [ $1 -gt $CPU_THRESHOLD ]; then
+	if [ "$ARG_COUNT" -eq 5 ]; then 
+		if [ "$1" -gt "$CPU_THRESHOLD" ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
@@ -147,8 +147,8 @@ function notify
 			echo "Message sent."
 		fi
 	fi
-	if [ $ARG_COUNT -eq 7]; then
-		if [ $1 -gt $CPU_THRESHOLD ] || [ $2 -gt $MEM_THRESHOLD ]; then
+	if [ "$ARG_COUNT" -eq 7]; then
+		if [ "$1" -gt "$CPU_THRESHOLD" ] || [ "$2" -gt "$MEM_THRESHOLD" ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
