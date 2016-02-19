@@ -76,6 +76,7 @@ function generate_report {
 	if [ "$filecount"  -gt "$MAXIMUM_REPORTS"  ]; then
 		oldest=$(ls -t "$REPORTS_DIR" | tail -1)
 		oldest="$REPORTS_DIR/$oldest"
+		echo $oldest
 		rm $oldest
 	fi
 	#Name of the report file
