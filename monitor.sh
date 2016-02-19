@@ -133,8 +133,7 @@ function notify
 	cpu_usage_int=$(printf "%.f" $1)
 
 	#Check if the process has exceeded the thresholds
-	if [ $1 -gt $CPU_THRESHOLD  ] || [ $2 -gt $MEM_THRESHOLD  ]
-	then
+	if [ $1 -gt $CPU_THRESHOLD  ] -o [ $2 -gt $MEM_THRESHOLD  ]; then
 		echo "PROCESS ID: $PID" > tmp-message
 		echo >> tmp-message
 		pname=$(awk < /proc/$PID/stat '{ print $2 }')
