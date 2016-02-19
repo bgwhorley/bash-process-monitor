@@ -76,7 +76,6 @@ function generate_report {
 	if [ "$filecount"  -gt "$MAXIMUM_REPORTS"  ]; then
 		oldest=$(ls -t "$REPORTS_DIR" | tail -1)
 		oldest="$REPORTS_DIR/$oldest"
-		echo $oldest
 		rm $oldest
 	fi
 	#Name of the report file
@@ -138,8 +137,9 @@ function notify
 
 	#Check if the process has exceeded the thresholds
 	if [ "$ARG_COUNT" -eq 5 ]; then 
-			
-		if [ "$1" -gt "$CPU_THRESHOLD" ]; then
+		CPU=$("$1 > $CPU_THRESHOLD" | bc -l)
+		echo $CPU
+		if [ $CPU ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
@@ -168,7 +168,7 @@ function notify
 	fi
 	#Check if process exceeded its CPU or MEM thresholds. If that is the case, send an email to $USER containing the last report
 
-}
+} 
 
 ARG_COUNT=$#
 
