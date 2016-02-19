@@ -12,7 +12,7 @@ hertz=$(getconf CLK_TCK)
 
 function check_arguments {
 
-
+	echo "argcount: $1"
 	#If number of arguments is less than 5, exit. For part 2, the number of arguments should be greater than 7
 	if [ "$1" -lt 5 ]; then
 		echo "USAGE: "
