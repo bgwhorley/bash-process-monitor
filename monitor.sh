@@ -136,6 +136,7 @@ function notify
 
 	#Check if the process has exceeded the thresholds
 	if [ "$ARG_COUNT" -eq 5 ]; then 
+			
 		if [ "$1" -gt "$CPU_THRESHOLD" ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
