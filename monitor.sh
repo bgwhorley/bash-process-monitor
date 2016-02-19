@@ -70,7 +70,7 @@ function jiffies_to_percentage {
 function generate_report {
 
 	#if ./reports_dir has more than $MAXIMUM_REPORTS reports, then, delete the oldest report to have room for the current one
-	filecount=$(ls -l $REPORTS_DIR | wc -l}	
+	filecount=$(ls -l $REPORTS_DIR | wc -l)	
 	if [ $filecount  -gt $MAXIMUM_REPORTS  ]; then
 		while [`ls -t $REPORTS_DIR | wc -l` -gt $MAXIMUM_REPORTS ]; do
 			rm `ls -t $REPORTS_DIR | head -1`
