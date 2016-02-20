@@ -137,7 +137,8 @@ function notify
 
 	#Check if the process has exceeded the thresholds
 	if [ "$ARG_COUNT" -eq 5 ]; then 
-		CPU=$((echo "$1 > $CPU_THRESHOLD" | bc))
+		echo "CPU THRESHOLD: $CPU_THRESHOLD"
+		CPU=$(echo "$1 > $CPU_THRESHOLD" | bc)
 		echo $CPU
 		if [ $CPU ]; then
 			echo "PROCESS ID: $PID" > tmp-message
@@ -152,8 +153,8 @@ function notify
 		fi
 	fi
 	if [ "$ARG_COUNT" -eq 7 ]; then
-		CPU=$((echo "$1 > $CPU_THRESHOLD" | bc))
-		MEM=$((echo "$1 > $MEM_THRESHOLD" | bc))
+		CPU=$(echo "$1 > $CPU_THRESHOLD" | bc)
+		MEM=$(echo "$1 > $MEM_THRESHOLD" | bc)
 		if [ $CPU ] || [ $MEM ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
