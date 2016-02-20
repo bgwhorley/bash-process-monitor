@@ -140,9 +140,9 @@ function notify
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
 			echo "PROCESS NAME: $pname" >> tmp-message
 			echo >> tmp-message
-			echo "CPU USAGE: $1" >> tmp-message
+			echo "CPU USAGE: $cpu_usage_int" >> tmp-message
 			echo >> tmp-message
-			/usr/bin/mailx -s "CPU/Memory use notification" $USER < tmp-message
+			/usr/bin/mailx -s "CPU/Memory threshold exceeded." $USER < tmp-message
 			echo "Message sent."
 		fi
 	fi
