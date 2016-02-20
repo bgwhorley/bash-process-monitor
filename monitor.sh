@@ -138,6 +138,7 @@ function notify
 		if [ $CPU ]; then
 		echo "CPU THRESHOLD: $CPU_THRESHOLD"
 		echo "CPU USAGE: $1"
+		echo "compare: $CPU"
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
