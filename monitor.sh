@@ -136,7 +136,7 @@ function notify
 	if [ "$ARG_COUNT" -eq 5 ]; then 
 		echo "CPU THRESHOLD: $CPU_THRESHOLD"
 		echo "CPU USAGE: $1"
-		CPU=$(echo "$1 > $CPU_THRESHOLD" | bc)
+		CPU=$(echo "$cpu_usage_int > $CPU_THRESHOLD" | bc)
 		if [ $CPU ]; then
 
 			echo "PROCESS ID: $PID" > tmp-message
