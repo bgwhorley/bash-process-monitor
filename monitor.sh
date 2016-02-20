@@ -173,9 +173,7 @@ function notify
 } 
 
 ARG_COUNT=$#
-echo $@
-echo $#
-check_arguments $# $@
+check_arguments $# "$@"
 
 init $1 $@
 
