@@ -173,7 +173,8 @@ function notify
 } 
 
 ARG_COUNT=$#
-check_arguments $# "$@"
+args=$@
+check_arguments $# $args
 
 init $1 $@
 
