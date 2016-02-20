@@ -135,7 +135,7 @@ function notify
 
 	#Check if the process has exceeded the thresholds
 	if [ "$ARG_COUNT" -eq 5 ]; then 
-		echo "CPU THRESHOLD: $CPU_THRESHOLD"
+		echo "notify: $CPU_THRESHOLD"
 		CPU=$(echo "$1 > $CPU_THRESHOLD" | bc)
 		echo $CPU
 		if [ $CPU ]; then
@@ -172,8 +172,7 @@ function notify
 } 
 
 ARG_COUNT=$#
-args=$@
-check_arguments $# $args
+check_arguments $# $@
 
 init $1 $@
 
