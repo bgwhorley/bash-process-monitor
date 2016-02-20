@@ -12,8 +12,6 @@ hertz=$(getconf CLK_TCK)
 
 function check_arguments {
 
-	echo "argcount: $1"
-	echo $2
 	#If number of arguments is less than 5, exit. For part 2, the number of arguments should be greater than 7
 	if [ "$1" -lt 5 ]; then
 		echo "USAGE: "
@@ -22,14 +20,15 @@ function check_arguments {
 	fi
 	#Extract the memory threshold (part 2 of the script)
 	
-	if [ "$1" -gt 7 ]; then		
+	if [ "$1" -gt 5 ]; then		
 		echo "USAGE: "
 		echo "$0 {process id} -cpu {utilization percentage} -mem {maximum memory in kb} {maximum reports} {time interval}"
 		exit
 	fi
-	CPU_THRESHOLD=$(awk < $2 '{ print $3 }')
+	CPU_THRESHOLD=${@:$#-2:1}
+	echo "CPU THRESHOLD: $CPU_THRESHOLD"
 	if [ "$1" -eq 7  ]; then 
-		MEM_THRESHOLD=$(awk < $2 '{ print $5 }')
+		MEM_THRESHOLD=${@:$#-2}
 	fi
 }
 
