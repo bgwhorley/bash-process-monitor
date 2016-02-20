@@ -134,11 +134,7 @@ function notify
 
 	#Check if the process has exceeded the thresholds
 	if [ "$ARG_COUNT" -eq 5 ]; then 
-		CPU=$(echo "$cpu_usage_int > $CPU_THRESHOLD" | bc) 
-		if [ $CPU ]; then
-		echo "CPU THRESHOLD: $CPU_THRESHOLD"
-		echo "CPU USAGE: $1"
-		echo "compare: $CPU"
+		if [ (echo "$cpu_usage_int > $CPU_THRESHOLD" | bc) -eq 1 ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
