@@ -26,7 +26,6 @@ function check_arguments {
 		exit
 	fi
 	CPU_THRESHOLD=${@:$#-2:1}
-	echo "CPU THRESHOLD: $CPU_THRESHOLD"
 	if [ "$1" -eq 7  ]; then 
 		MEM_THRESHOLD=${@:$#-2}
 	fi
@@ -135,10 +134,11 @@ function notify
 
 	#Check if the process has exceeded the thresholds
 	if [ "$ARG_COUNT" -eq 5 ]; then 
-		echo "notify: $CPU_THRESHOLD"
+		echo "CPU THRESHOLD: $CPU_THRESHOLD"
+		echo "CPU USAGE: $1"
 		CPU=$(echo "$1 > $CPU_THRESHOLD" | bc)
-		echo $CPU
 		if [ $CPU ]; then
+
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
