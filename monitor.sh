@@ -70,7 +70,7 @@ function generate_report {
 
 	#if ./reports_dir has more than $MAXIMUM_REPORTS reports, then, delete the oldest report to have room for the current one
 	filecount=$(ls "$REPORTS_DIR" | wc -l)	
-	if [ "$filecount"  -gt "$MAXIMUM_REPORTS"  ]; then
+	if [ "$filecount" -ge "$MAXIMUM_REPORTS"  ]; then
 		oldest=$(ls -t "$REPORTS_DIR" | tail -1)
 		oldest="$REPORTS_DIR/$oldest"
 		rm $oldest
