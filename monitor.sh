@@ -20,14 +20,17 @@ function check_arguments {
 	fi
 	#Extract the memory threshold (part 2 of the script)
 	
-	if [ "$1" -gt 5 ]; then		
+	if [ "$1" -gt 5 ] && [ "$1" -ne 7 ]; then		
 		echo "USAGE: "
 		echo "$0 {process id} -cpu {utilization percentage} -mem {maximum memory in kb} {maximum reports} {time interval}"
 		exit
 	fi
-	CPU_THRESHOLD=${@:$#-2:1}
+
 	if [ "$1" -eq 7  ]; then 
-		MEM_THRESHOLD=${@:$#-2}
+		MEM_THRESHOLD=${@:$#-2:1}
+		CPU_THRESHOLD=${@:$#-4:1}
+	else
+		CPU_THRESHOLD=${@:$#-2:1}
 	fi
 }
 
@@ -159,9 +162,9 @@ function notify
 			echo >> tmp-message
 			echo "CPU USAGE: $cpu_usage_int %" >> tmp-message
 			echo >> tmp-message
-			echo "MEM THRESHOLD: $MEM_THRESHOLD kb" >> tmp-message
+			echo "MEM THRESHOLD: $MEM_THRESHOLD kB" >> tmp-message
 			echo >> tmp-message
-			echo "MEM USAGE: $2" >> tmp-message
+			echo "MEM USAGE: $2 kB" >> tmp-message
 			echo >> tmp-message
 			/usr/bin/mailx -s "CPU/Memory use notification" $USER < tmp-message
 			echo "Message sent."
