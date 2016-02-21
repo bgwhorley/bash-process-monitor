@@ -140,22 +140,26 @@ function notify
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
 			echo "PROCESS NAME: $pname" >> tmp-message
 			echo >> tmp-message
-			echo "CPU USAGE: $cpu_usage_int" >> tmp-message
+			echo "CPU THRESHOLD: $CPU_THRESHOLD" >> tmp-message
+			echo >> tmp-message
+			echo "CPU USAGE: $cpu_usage_int %" >> tmp-message
 			echo >> tmp-message
 			/usr/bin/mailx -s "CPU/Memory threshold exceeded." $USER < tmp-message
 			echo "Message sent."
 		fi
 	fi
 	if [ "$ARG_COUNT" -eq 7 ]; then
-		CPU=$(echo "$1 > $CPU_THRESHOLD" | bc)
-		MEM=$(echo "$1 > $MEM_THRESHOLD" | bc)
-		if [ $CPU ] || [ $MEM ]; then
+		if [ $(echo "$1 > $CPU_THRESHOLD" | bc) -eq 1 ] || [ $(echo "$1 > $MEM_THRESHOLD" | bc) -eq 1 ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
 			echo "PROCESS NAME: $pname" >> tmp-message
 			echo >> tmp-message
-			echo "CPU USAGE: $1" >> tmp-message
+			echo "CPU/MEMORY THRESHOLD: $CPU_THRESHOLD%" >> tmp-message
+			echo >> tmp-message
+			echo "CPU USAGE: $cpu_usage_int %" >> tmp-message
+			echo >> tmp-message
+			echo "MEM THRESHOLD: $MEM_THRESHOLD kb" >> tmp-message
 			echo >> tmp-message
 			echo "MEM USAGE: $2" >> tmp-message
 			echo >> tmp-message
