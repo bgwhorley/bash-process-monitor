@@ -152,7 +152,7 @@ function notify
 		fi
 	fi
 	if [ "$ARG_COUNT" -eq 7 ]; then
-		if [ $(echo "$1 > $CPU_THRESHOLD" | bc) -eq 1 ] || [ $(echo "$1 > $MEM_THRESHOLD" | bc) -eq 1 ]; then
+		if [ $(echo "$1 > $CPU_THRESHOLD" | bc) -eq 1 ] || [ $(echo "$2 > $MEM_THRESHOLD" | bc) -eq 1 ]; then
 			echo "PROCESS ID: $PID" > tmp-message
 			echo >> tmp-message
 			pname=$(awk < /proc/$PID/stat '{ print $2 }')
