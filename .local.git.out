@@ -1,0 +1,1582 @@
+[master (root-commit) a3dffbb] Lab 2 commit
+ 1 file changed, 14 insertions(+)
+ create mode 100755 pwcheck.sh
+[master ac2a523] Lab 2 commit
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+[master 7b3b27f] Lab 2 commit
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+[master d9cad9e] Lab 2 commit
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+[master 97b28ab] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master ee07699] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master 11cfed1] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 2ed2308] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 9beef16] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master a2eba7d] Lab 2 commit
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+[master 308bb96] Lab 2 commit
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+[master a240657] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 7ce8edd] Lab 2 commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[master 973edaf] Lab 2 commit
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master 093a297] Lab 2 commit
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+[master 594d683] Lab 2 commit
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[master 255aaed] Lab 2 commit
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master 4a01d18] Lab 2 commit
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+[master 744c31e] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master c1eabad] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master c917f3b] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master ecf7959] Lab 2 commit
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master e2303e1] Lab 2 commit
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+[master 39fb18a] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 858e1c8] Lab 2 commit
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[master 7b59e6a] Lab 2 commit
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+[master 683121f] Lab 2 commit
+ 1 file changed, 1 insertion(+)
+[master 11a053d] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master 70b1d5b] Lab 2 commit
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+[master 01815d9] Lab 2 commit
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+[master 445abb9] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master e12591d] Lab 2 commit
+ 1 file changed, 5 insertions(+)
+[master 59c12f5] Lab 2 commit
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master 827f25d] Lab 2 commit
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master 22fc6c2] Lab 2 commit
+ 1 file changed, 13 insertions(+)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master 3761857] Lab 2 commit
+ 1 file changed, 5 insertions(+)
+[master e373fe1] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master efb19df] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 372bd05] Lab 2 commit
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master ba2bd89] Lab 2 commit
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	monitor.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master cfd33fd] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 0f49d1b] Lab 2 commit
+ 1 file changed, 9 insertions(+), 12 deletions(-)
+[master 848e238] Lab 2 commit
+ 1 file changed, 1 deletion(-)
+[master 1742689] Lab 2 commit
+ 1 file changed, 153 insertions(+)
+ create mode 100755 monitor.sh
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swp
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+	tmp-messageecho
+
+nothing added to commit but untracked files present
+[master 331ba98] Lab 2 commit
+ 1 file changed, 41 insertions(+), 20 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	1.2.3
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp
+
+nothing added to commit but untracked files present
+[master 9978a90] Lab 2 commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+[master 46c6b02] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 12df40f] Lab 2 commit
+ 1 file changed, 1 deletion(-)
+[master 231cd1a] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	1.2.3
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp
+
+nothing added to commit but untracked files present
+[master 18de006] Lab 2 commit
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	1.2.3
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master f8a020c] Lab 2 commit
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+[master de178b0] Lab 2 commit
+ 1 file changed, 29 insertions(+), 10 deletions(-)
+[master 2ff5ed9] Lab 2 commit
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+[master 609e35d] Lab 2 commit
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+[master d79eff8] Lab 2 commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[master 3dd2333] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 01cc6eb] Lab 2 commit
+ 1 file changed, 1 insertion(+)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 6801538] Lab 2 commit
+ 1 file changed, 1 insertion(+)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master b0307a7] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 852e8cb] Lab 2 commit
+ 1 file changed, 1 insertion(+)
+[master 67c32df] Lab 2 commit
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 6f919cf] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 3ffb01b] Lab 2 commit
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 72f6dce] Lab 2 commit
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 83e040f] Lab 2 commit
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+[master 4e99390] Lab 2 commit
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 0f66ef9] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 6b24990] Lab 2 commit
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master dd8330b] Lab 2 commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[master b4963aa] Lab 2 commit
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master ae78c8b] Lab 2 commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 004d5bc] Lab 2 commit
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+
+nothing added to commit but untracked files present
+[master 7af8e59] Lab 2 commit
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+[master ff32a06] Lab 2 commit
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+[master 44688c7] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 02a2a2b] Lab 2 commit
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+[master 0b1a264] Lab 2 commit
+ 1 file changed, 1 insertion(+)
+[master 4da5516] Lab 2 commit
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+[master 93475db] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 7c2fdc5] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 428732e] Lab 2 commit
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[master 6935983] Lab 2 commit
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+
+nothing added to commit but untracked files present
+[master 00fa7cf] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+
+nothing added to commit but untracked files present
+[master 4ea65d3] Lab 2 commit
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	environment_variables.sh
+	example.sh
+	file_io.sh
+	hello_world.sh
+	if_else.sh
+	loops.sh
+	mail_hello.sh
+	outfile.txt
+	passing_arguments.sh
+	password.txt
+	pipes.sh
+	regex_test.txt
+	reports_dir/
+	script-consumer.sh
+	string_manipulation.sh
+	test.sh
+	tmp-message
+
+nothing added to commit but untracked files present
+[master e04b8b8] Lab 2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+	tmpOracle
+	tmpOutput
+	tmpPass
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+
+nothing added to commit but untracked files present
+On branch master
+Untracked files:
+	.local.git.out
+	.monitor.sh.swn
+	.monitor.sh.swo
+	README
+	password.txt
+	pwtest.sh
+	reports_dir/
+	script-consumer.sh
+
+nothing added to commit but untracked files present

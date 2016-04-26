@@ -1,0 +1,3 @@
+All lab requirements should be fulfilled, it works as specified in the usage. As long as the script has 5 or 7 arguments, it'll run but it doesn't check for faulty inputs, so I can't guarantee how it'll behave when something like that happens. If I had more time I'd add more, but this is what I have.
+
+Ben Whorley
